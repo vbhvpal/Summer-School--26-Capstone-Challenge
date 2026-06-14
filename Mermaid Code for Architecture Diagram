@@ -1,0 +1,58 @@
+flowchart TB
+
+subgraph User
+A[Student]
+end
+
+subgraph LMS Platform
+B[Authentication]
+C[Dashboard]
+D[Courses]
+E[Progress Tracking]
+F[Profile]
+end
+
+subgraph Analytics Layer
+G[Learning Analytics]
+H[Performance Metrics]
+I[Study Streak Analysis]
+end
+
+subgraph AI Layer
+J[AI Recommendation Engine]
+K[Personalized Study Plan]
+L[Weak Topic Detection]
+M[Performance Insights]
+end
+
+subgraph Outcomes
+N[Improved Engagement]
+O[Better Academic Performance]
+P[Student Success]
+end
+
+A --> B
+B --> C
+
+C --> D
+C --> E
+C --> F
+
+E --> G
+E --> H
+E --> I
+
+G --> J
+H --> J
+I --> J
+
+J --> K
+J --> L
+J --> M
+
+K --> N
+L --> O
+M --> P
+
+N --> P
+O --> P
